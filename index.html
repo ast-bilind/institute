@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ast Bilind Institute — Languages & School Reinforcement</title>
+  <meta name="description" content="Ast Bilind Institute — language courses and school-subject reinforcement in Duhok. English, German, Kurdish, Arabic. Home-teaching available." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root { --accent: #0ea5a4; --accent-dark:#0b766e; }
+    body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    .glass { background: rgba(255,255,255,0.65); backdrop-filter: blur(6px); }
+    .hero-bg { background: radial-gradient(closest-side, rgba(14,165,164,0.12), transparent), linear-gradient(180deg, rgba(14,165,164,0.05), rgba(59,130,246,0.02)); }
+    .float-shape{position:absolute;border-radius:50%;filter:blur(36px);opacity:0.45}
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-slate-50">
+
+  <!-- floating shapes -->
+  <div aria-hidden class="float-shape w-48 h-48 bg-emerald-300 left-10 top-10"></div>
+  <div aria-hidden class="float-shape w-72 h-72 bg-sky-300 right-0 top-56"></div>
+
+  <!-- Header -->
+  <header class="fixed w-full z-30 bg-white/70 backdrop-blur-sm shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-teal-400 to-sky-500 flex items-center justify-center text-white font-bold">AB</div>
+        <div>
+          <h1 class="text-lg font-semibold">Ast Bilind Institute</h1>
+          <p class="text-xs text-slate-600">Languages • School Reinforcement • Home Teaching</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#courses" class="hover:underline">Courses</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#teachers" class="hover:underline">Teachers</a>
+        <a href="#testimonials" class="hover:underline">Testimonials</a>
+        <a href="#contact" class="text-white bg-teal-500 px-4 py-2 rounded-md shadow hover:bg-teal-600">Contact</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="menuBtn" aria-label="Open menu" class="p-2 rounded-md text-slate-700">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="pt-28">
+    <section class="hero-bg relative overflow-hidden">
+      <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+        <div data-aos="fade-right">
+          <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Learn Languages. Strengthen Knowledge. Build Your Future.</h2>
+          <p class="mt-4 text-slate-700">At <strong>Ast Bilind Institute</strong> we teach English, German, Arabic & Kurdish — and provide targeted reinforcement for school subjects. Small classes. Experienced teachers. Real results.</p>
+
+          <div class="mt-6 flex gap-3">
+            <a href="#courses" class="inline-block px-5 py-3 bg-teal-500 text-white rounded-lg shadow hover:bg-teal-600">Explore Courses</a>
+            <button id="registerBtn" class="inline-block px-5 py-3 border border-slate-300 rounded-lg">Register Now</button>
+          </div>
+        </div>
+
+        <div data-aos="fade-left" class="relative">
+          <div class="glass p-6 rounded-2xl shadow-xl border border-white/30">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80" alt="classroom learning" class="rounded-xl w-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-16" data-aos="fade-up">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl font-bold">About Ast Bilind Institute</h3>
+          <p class="mt-4 text-slate-700">Ast Bilind Institute is a trusted learning center in Duhok focused on foreign language teaching and school-subject reinforcement. We bring together experienced teachers, modern methods, and a student-centered approach to produce measurable progress.</p>
+
+          <ul class="mt-4 space-y-2 text-slate-600">
+            <li>✔️ Personalized learning plans</li>
+            <li>✔️ Small class sizes & private lessons</li>
+            <li>✔️ Home-teaching available across Duhok</li>
+            <li>✔️ Exam preparation and continuous assessment</li>
+          </ul>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80" alt="students studying" class="rounded-xl shadow-lg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="max-w-6xl mx-auto px-6 py-16" data-aos="fade-up">
+      <h3 class="text-2xl font-bold">Our Services</h3>
+      <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded-xl shadow" data-aos="zoom-in">
+          <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=700&q=80" class="rounded-md mb-4" alt="Language courses">
+          <h4 class="font-semibold">Language Courses</h4>
+          <p class="text-sm text-slate-600 mt-2">English, German, Arabic, Kurdish — all levels, taught by professionals.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow" data-aos="zoom-in">
+          <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9b?auto=format&fit=crop&w=700&q=80" class="rounded-md mb-4" alt="School reinforcement">
+          <h4 class="font-semibold">School Subject Reinforcement</h4>
+          <p class="text-sm text-slate-600 mt-2">Math, science, literature, and more — guided study support.</p>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow" data-aos="zoom-in">
+          <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=700&q=80" class="rounded-md mb-4" alt="Home teaching">
+          <h4 class="font-semibold">Home Teaching</h4>
+          <p class="text-sm text-slate-600 mt-2">Teachers available to visit students at home for flexible learning.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEACHERS -->
+    <section id="teachers" class="max-w-6xl mx-auto px-6 py-16" data-aos="fade-up">
+      <h3 class="text-2xl font-bold">Meet Our Teachers</h3>
+      <div class="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="p-4 rounded-xl bg-white shadow" data-aos="flip-left">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=700&q=80" alt="Ms Dilveen" class="rounded-md w-full object-cover" />
+          <h4 class="mt-3 font-semibold">Ms. Dilveen</h4>
+          <p class="text-sm text-slate-600">English Teacher — Conversation & Exam Prep</p>
+        </div>
+        <div class="p-4 rounded-xl bg-white shadow" data-aos="flip-left" data-aos-delay="80">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=80" alt="Mr Amin" class="rounded-md w-full object-cover" />
+          <h4 class="mt-3 font-semibold">Mr. Amin</h4>
+          <p class="text-sm text-slate-600">German Teacher — Structured Levels & Speaking</p>
+        </div>
+        <div class="p-4 rounded-xl bg-white shadow" data-aos="flip-left" data-aos-delay="160">
+          <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=700&q=80" alt="Ms Sara" class="rounded-md w-full object-cover" />
+          <h4 class="mt-3 font-semibold">Ms. Sara</h4>
+          <p class="text-sm text-slate-600">Kurdish & Arabic — School Subject Reinforcement</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="bg-slate-100 py-16" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-2xl font-bold">What Students Say</h3>
+        <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow">
+            <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=700&q=80" class="w-16 h-16 rounded-full object-cover mb-3" alt="student testimonial">
+            <p class="text-sm text-slate-600">“Ast Bilind helped me pass my English exams and feel confident speaking.”</p>
+            <h4 class="mt-3 font-semibold text-sm">— Ali, English Student</h4>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow">
+            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=700&q=80" class="w-16 h-16 rounded-full object-cover mb-3" alt="student testimonial">
+            <p class="text-sm text-slate-600">“The German classes were excellent — I can now work in Germany.”</p>
+            <h4 class="mt-3 font-semibold text-sm">— Dilzar, German Student</h4>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=80" class="w-16 h-16 rounded-full object-cover mb-3" alt="student testimonial">
+            <p class="text-sm text-slate-600">“My daughter improved her math skills and now loves school.”</p>
+            <h4 class="mt-3 font-semibold text-sm">— Shirin, Parent</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-16" data-aos="fade-up">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <h3 class="text-2xl font-bold">Contact & Visit Us</h3>
+          <p class="mt-2 text-slate-600">Location: Maseki, 20 meters near Shahid Mala Amin High School, Duhok</p>
+          <p class="mt-1 text-slate-600">Phone / WhatsApp: <a href="tel:+9647502509595" class="text-teal-600 font-semibold">0750 250 95 95</a></p>
+          <p class="mt-1 text-slate-600">Email: <a href="mailto:Astblind.institute@gmail.com" class="text-teal-600">Astblind.institute@gmail.com</a></p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold">Send a Message / Register</h4>
+          <form id="contactForm" class="mt-4 grid gap-3">
+            <input required name="name" placeholder="Your full name" class="p-3 border rounded-md" />
+            <input required name="phone" placeholder="Phone or WhatsApp number" class="p-3 border rounded-md" />
+            <input name="email" placeholder="Email (optional)" class="p-3 border rounded-md" />
+            <select name="interest" class="p-3 border rounded-md">
+              <option value="">I am interested in...</option>
+              <option>English Course</option>
+              <option>German Course</option>
+              <option>School Reinforcement</option>
+              <option>Home Teaching</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Message (optional)" class="p-3 border rounded-md"></textarea>
+            <div class="flex gap-3">
+              <button type="submit" class="px-4 py-2 bg-teal-500 text-white rounded-md">Send / Register</button>
+              <button type="button" id="clearBtn" class="px-4 py-2 border rounded-md">Clear</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="mt-8">
+        <iframe src="https://www.google.com/maps?q=Maseki,+Duhok&output=embed" class="w-full h-64 rounded-xl border" allowfullscreen=""></iframe>
+      </div>
+    </section>
+
+    <footer class="bg-white/80 border-t mt-12">
+      <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div>
+          <div class="font-semibold">Ast Bilind Institute</div>
+          <div class="text-sm text-slate-500">Maseki, 20 meters near Shahid Mala Amin High School, Duhok</div>
+        </div>
+        <div class="text-sm text-slate-600">© <span id="year"></span> Ast Bilind Institute. All rights reserved.</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    AOS.init({ duration: 800, once: true });
+  </script>
+
+</body>
+</html>
